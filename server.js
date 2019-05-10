@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const postData=mongoose.model('post');
 const userData=mongoose.model('user');
 var session = require('express-session');
+const port=process.env.PORT || 3000;
 
 // var router=express.Router();
 // cmsController=require('./cms.controller.js');
@@ -29,7 +30,7 @@ app.engine('hbs',exphbs({extname:'hbs'}));
 // exphbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine','hbs');
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
   console.log('server is ruuning on port:3000');
 });
 // app.use('/',cmsController);
