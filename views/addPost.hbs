@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Home - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/blog-home.css" rel="stylesheet">
+
+
+
+<body>
+{{>header}}
+<div class="container bg-info" >
+  <div class="row">
+    <div class="col-md-6">
+<form action="/addPost" method="post">
+
+
+                              <div class="form-group">
+                              <label for="title">Post Title</label>
+                              <input type="text" class="form-control" name="title">
+                              </div>
+
+                              <!-- <div class="form-group">
+                              <label for="post category">Post Category Id</label>
+                              <input type="text" class="form-control" name="post_category_id">
+                              </div> -->
+
+                              <div class="form-group">
+                              <label for="post category">Post Author</label>
+                              <input type="text" class="form-control" name="author">
+                              </div>
+
+                              <!-- <div class="form-group">
+                              <label for="post category">Post Status</label>
+                              <input type="text" class="form-control" name="post_status">
+                              </div> -->
+
+
+
+
+<!--
+                              <div class="form-group">
+                              <label for="post_image">Post Image</label>
+                              <input type="file"  name="image">
+                              </div> -->
+
+                              <!-- <div class="form-group">
+                              <label for="post_tags">Post Tags</label>
+                              <input type="text" class="form-control" name="post_tags">
+                              </div> -->
+
+                              <div class="form-group">
+                              <label for="post_content">Post Content</label>
+                              <textarea class="form-control "name="description" id="" cols="30" rows="10">
+                              </textarea>
+                              </div>
+
+
+
+                              <div class="form-group">
+                              <input class="btn btn-primary" type="submit"  value="Publish Post">
+                              </div>
+
+
+                              </form>
+                            </div>
+                            
+
+                          </div>
+
+                        </div>
+
+
+{{>footer}}
+</body>
